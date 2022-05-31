@@ -21,11 +21,25 @@ const dataBelanjaan = [
 ];
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const listBelanjaan = null;
-
+listBelanjaan = (params) => {
+  let i = 0;
+  while(params[i]){
+    let list = `- ${params[i].nama} x ${params[i].kuantitas}`;
+    console.log(list);
+    i++;
+  }
+}
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-const totalBelanjaan = null;
-
+totalBelanjaan  = (params) => {
+  let i = 0;
+  let total = 0;
+  while(params[i]){
+    const nilai = params[i].harga * params[i].kuantitas;
+    total += nilai;
+    i++;
+  }
+  return total;
+}
 // ! JANGAN DIMODIFIKASI
 const main = () => {
   console.log("Selamat datang customer");
