@@ -23,16 +23,13 @@ const dataBelanjaan = [
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 listBelanjaan = (params) => {
   let i = 0;
-  let list = [];
-  while(params[i]){
-    let data = `- ${params[i].nama} x ${params[i].kuantitas}`;
-    list.push(data);
-    i++;
+  for (const data of params){
+    let deskripsi = `- ${data.nama} x ${data.kuantitas}`;
+    console.log(deskripsi);
   }
-  console.log(list);
 }
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
-totalBelanjaan  = (params) => {
+totalBelanjaan = (params) => {
   let i = 0;
   let total = 0;
   while(params[i]){
