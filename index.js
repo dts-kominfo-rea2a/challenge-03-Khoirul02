@@ -22,12 +22,12 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 listBelanjaan = (params) => {
-  let arrayList = [];
-  for (const data of params){
-    let deskripsi = `- ${data.nama} x ${data.kuantitas}`;
+  var arrayList = [];
+  for (let i = 0; i  < params.length; i++){
+    let deskripsi = `- ${params[i].nama} x ${params[i].kuantitas}`;
     arrayList.push(deskripsi);
   }
-  console.log(arrayList)
+  return arrayList;
 }
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 totalBelanjaan = (params) => {
