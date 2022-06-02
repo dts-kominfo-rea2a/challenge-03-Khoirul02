@@ -27,7 +27,7 @@ listBelanjaan = (params) => {
     let deskripsi = `- ${data.nama} x ${data.kuantitas}`;
     arrayList.push(deskripsi);
   }
-  console.log(arrayList);
+  console.log(arrayList)
 }
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 totalBelanjaan = (params) => {
